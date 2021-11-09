@@ -1,0 +1,36 @@
+.nav__items {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  margin-top: 25px;
+}
+
+.nav__item {
+  border-radius: 3px;
+  padding: 6px 20px;
+  transition: 0.3s ease-in-out;
+  position: relative;
+}
+
+.nav__item a {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+}
+
+/* .nav__item:hover {
+  background: #7a7979;
+  color: #d7d2cc;
+} */
+
+.nav__item:hover:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  background: #999;
+  width: 50%;
+  height: 2px;
+  transform: translateX(-50%);
+  transition: 0.2s ease;
+}
